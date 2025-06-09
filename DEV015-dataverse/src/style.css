@@ -1,0 +1,1636 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.6;
+  text-decoration: none;
+}
+
+body, p, li, input, button, textarea {
+  font-size: 16px;
+}
+
+h1 {
+  font-size: 32px;
+  font-weight: 800;
+}
+h2 {
+  font-size: 24px;
+  font-weight: 700;
+}
+h3 {
+  font-size: 20px;
+  font-weight: 700;
+}
+h4 {
+  font-size: 18px;
+  font-weight: 600;
+}
+h5 {
+  font-size: 16px;
+  font-weight: 600;
+}
+h6 {
+  font-size: 14px;
+  font-weight: 600;
+}
+
+html {
+  scroll-behavior: smooth !important;
+  scroll-padding-top: 6rem !important;
+  overflow-x: hidden !important;
+}
+
+
+section {
+  padding: 0;
+  background: #F0ECE3;
+}
+
+.heading {
+  text-align: center;
+  font-size: 4rem;
+  color: #4F2E1D;
+  padding: 1rem;
+  margin: 0 auto;
+  background: #C7B198;
+}
+
+
+/* MAIN INNER WRAPPER */
+.main-inner {
+  max-width: 1290px;
+  margin: 0 auto;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+
+/* Help Our Animals Section */
+.help-section {
+  max-width: 1288px;
+  margin: 40px auto;
+  background: linear-gradient(135deg, #fef3c7 0%, #f3e8ff 50%, #dbeafe 100%);
+  border-radius: 16px;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+  padding: 48px 32px;
+  border: 2px solid #fed7aa;
+  position: relative;
+  overflow: hidden;
+}
+
+
+
+/* Fondo decorativo con corazones para la sección de ayuda */
+.help-section::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 20"><defs><pattern id="hearts" x="0" y="0" width="20" height="20" patternUnits="userSpaceOnUse"><text x="10" y="15" text-anchor="middle" fill="%23f97316" opacity="0.1" font-size="12">♥</text></pattern></defs><rect width="100" height="20" fill="url(%23hearts)"/></svg>') repeat;
+  pointer-events: none;
+}
+
+/* Contenido principal de la sección de ayuda */
+.help-content {
+  position: relative;
+  z-index: 1;
+}
+
+/* Cabecera destacada de la sección de ayuda */
+.help-header {
+  text-align: center;
+  margin-bottom: 32px;
+}
+
+.help-header h2 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #1f2937;
+  margin-bottom: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+}
+
+/* Icono animado de la sección de ayuda */
+.help-icon {
+  font-size: 2.5rem;
+  animation: pulse 2s infinite;
+}
+
+/* Descripción central de la sección de ayuda */
+.help-description {
+  max-width: 800px;
+  margin: 0 auto 32px;
+  text-align: center;
+}
+
+/* Introducción destacada en la sección de ayuda */
+.help-intro {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: #7c3aed;
+  margin-bottom: 20px;
+  line-height: 1.6;
+}
+
+/* Párrafos de la descripción en la sección de ayuda */
+.help-description p {
+  font-size: 1.125rem;
+  color: #374151;
+  margin-bottom: 16px;
+  line-height: 1.7;
+}
+
+.help-stats {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 24px;
+  margin: 40px 0;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Tarjeta individual de estadística en la sección de ayuda */
+.help-stat {
+  text-align: center;
+  background: rgba(255, 255, 255, 0.7);
+  padding: 20px;
+  border-radius: 12px;
+  border: 1px solid rgba(249, 115, 22, 0.2);
+}
+
+/* Número grande de la estadística */
+.help-stat-number {
+  display: block;
+  font-size: 2rem;
+  font-weight: bold;
+  color: #f97316;
+  margin-bottom: 8px;
+}
+
+/* Texto descriptivo de la estadística */
+.help-stat-text {
+  color: #6b7280;
+  font-size: 0.875rem;
+  font-weight: 500;
+}
+
+/* Bloque de misión dentro de la sección de ayuda */
+.help-mission {
+  background: rgba(255, 255, 255, 0.8);
+  border-radius: 12px;
+  padding: 24px;
+  margin: 32px 0;
+  border: 1px solid rgba(249, 115, 22, 0.2);
+}
+
+.mission-list {
+  list-style: none;
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 0;
+  text-align: center;
+}
+
+
+
+.mission-list {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding-left: 0;
+  gap: 0;
+}
+
+.mission-list li {
+  font-size: 17px;
+  color: rgb(55, 65, 81);
+  display: flex;
+  align-items: center;
+  padding: 8px 0px;
+  gap: 12px;
+}
+
+.mission-list li::first-letter {
+  font-size: 2.1em;
+  margin-right: 10px;
+  vertical-align: middle;
+}
+
+
+
+.donation-section {
+  background: #fff;
+  border-radius: 16px;
+  box-shadow: 0 4px 24px rgba(249, 115, 22, 0.08);
+  border: 2px solid #f97316;
+  padding: 40px 24px;
+  margin-top: 32px;
+  text-align: center;
+  max-width: 1096px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Título de la sección de donaciones */
+.donation-section h3 {
+  font-size: 28px;
+  font-weight: bold;
+  color: #1f2937;
+  margin-bottom: 16px;
+}
+
+/* Párrafo introductorio de la sección de donaciones */
+.donation-section > p {
+  font-size: 16px;
+  color: #6b7280;
+  margin-bottom: 32px;
+}
+
+.donation-buttons {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 24px;
+  margin-bottom: 32px;
+}
+
+/* Opción individual de donación */
+.donation-option {
+  background: white;
+  border-radius: 12px;
+  padding: 24px;
+  border: 1px solid #fed7aa;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+}
+
+.donation-option h4 {
+  font-size: 1.25rem;
+  font-weight: bold;
+  color: #1f2937;
+  margin-bottom: 8px;
+}
+
+.donation-option p {
+  color: #6b7280;
+  margin-bottom: 20px;
+  line-height: 1.5;
+}
+
+/* Botón de donación vía PayPal */
+.paypal-button {
+  background: linear-gradient(135deg, #0070ba 0%, #003087 100%);
+  color: #fff !important;
+  border: none;
+  padding: 12px 32px;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  width: 100%;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.paypal-button * {
+  color: #fff !important;
+}
+
+.paypal-logo {
+  color: #fff !important;
+  font-weight: bold;
+  font-family: 'Helvetica', sans-serif;
+}
+
+.paypal-button:hover {
+  background: linear-gradient(135deg, #005ea6 0%, #002c5f 100%);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.paypal-button.monthly {
+  background: linear-gradient(135deg, #16a34a 0%, #15803d 100%);
+}
+
+.paypal-button.monthly:hover {
+  background: linear-gradient(135deg, #15803d 0%, #166534 100%);
+}
+
+.paypal-logo {
+  font-weight: bold;
+  font-family: 'Helvetica', sans-serif;
+}
+
+/* Contenedor de montos sugeridos de donación */
+.donation-amounts {
+  border-top: 1px solid #e5e7eb;
+  padding-top: 24px;
+}
+
+/* Texto descriptivo de los montos sugeridos */
+.amounts-text {
+  font-size: 1rem;
+  color: #6b7280;
+  margin-bottom: 16px;
+}
+
+.amount-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.amount-btn {
+  background: white;
+  border: 2px solid #f97316;
+  color: #f97316;
+  padding: 8px 16px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-weight: 600;
+}
+
+.amount-btn:hover {
+  background: #f97316;
+  color: white;
+  transform: translateY(-2px);
+}
+
+
+
+/* HERO LANDING MODERNO */
+/* Sección principal tipo hero del landing */
+.hero-landing {
+  background: #fff;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  border-bottom: 1px solid #eee;
+}
+
+
+.hero-inner {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 60px 32px 40px 32px;
+  gap: 20px;
+  position: relative;
+  z-index: 2;
+}
+
+
+.hero-text {
+  flex: 1 1 420px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  z-index: 2;
+  position: relative;
+  padding: 38px 36px 38px 36px;
+  background: none;
+  box-shadow: none;
+}
+
+
+
+.hero-text h1 {
+  font-size: 3.1rem;
+  font-weight: 900;
+  color: #222;
+  margin-bottom: 0.6rem;
+  line-height: 1.07;
+  text-shadow: 0 2px 10px rgba(255,255,255,0.7), 0 1px 1px rgba(0,0,0,0.12);
+}
+
+.hero-text .highlight {
+  color: #3b82f6;
+  font-weight: 900;
+  letter-spacing: 0.5px;
+}
+.hero-text h1 br {
+  display: none;
+}
+.hero-sub {
+  font-size: 1.14rem;
+  color: #6b7280;
+  margin-bottom: 2.1rem;
+  margin-top: 0.2rem;
+  line-height: 1.5;
+}
+.hero-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 11px;
+  background: #19506e;
+  color: #fff;
+  font-size: 1.09rem;
+  font-weight: 700;
+  padding: 13px 32px;
+  border-radius: 24px;
+  border: none;
+  box-shadow: 0 2px 8px rgba(25,80,110,0.13);
+  text-decoration: none;
+  transition: background 0.18s, box-shadow 0.18s;
+  cursor: pointer;
+  letter-spacing: 0.3px;
+}
+.hero-btn .icon {
+  font-size: 1.25em;
+  color: #fff;
+  -webkit-text-stroke: 0.5px #fff;
+  filter: drop-shadow(0 1px 2px rgba(0,0,0,0.12));
+}
+.hero-btn:hover {
+  background: #256fae;
+  color: #fff;
+  box-shadow: 0 4px 18px rgba(25,80,110,0.19);
+}
+
+
+
+
+/* --- Responsive HERO (mobile) --- */
+
+/* Contact Form Section */
+.contact-section {
+  max-width: 1288px;
+  margin: 40px auto;
+  background: white;
+  border-radius: 16px;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+  padding: 48px 32px;
+  border: 2px solid #fed7aa;
+  overflow: hidden;
+}
+
+
+/* Contenedor general del área de contacto */
+.contact-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Grid que organiza el formulario y la imagen de contacto */
+.contact-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  min-height: 600px;
+}
+
+/* Contenedor del formulario de contacto */
+.contact-form-wrapper {
+  padding: 48px 40px;
+  background: linear-gradient(135deg, #fff7ed 0%, #fef3c7 100%);
+}
+
+/* Título del formulario de contacto */
+.contact-title {
+  font-size: 28px;
+  font-weight: bold;
+  color: #1f2937;
+  margin-bottom: 16px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+/* Icono junto al título del formulario de contacto */
+.contact-icon {
+  font-size: 2rem;
+}
+
+/* Descripción del formulario de contacto */
+.contact-description {
+  color: #6b7280;
+  font-size: 1.125rem;
+  line-height: 1.6;
+  margin-bottom: 32px;
+}
+
+/* Formulario de contacto */
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+/* Grupo de campos del formulario */
+.form-group {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Etiqueta de los campos del formulario */
+.form-label {
+  color: #374151;
+  font-weight: 600;
+  margin-bottom: 8px;
+  font-size: 0.875rem;
+}
+
+/* Campos de entrada del formulario */
+.form-input,
+.form-textarea {
+  padding: 12px 16px;
+  border: 2px solid #e5e7eb;
+  border-radius: 8px;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+  background: white;
+}
+
+.form-input:focus,
+.form-textarea:focus {
+  outline: none;
+  border-color: #f97316;
+  box-shadow: 0 0 0 3px rgba(249, 115, 22, 0.1);
+}
+
+.form-textarea {
+  resize: vertical;
+  min-height: 120px;
+  font-family: inherit;
+}
+
+/* Botón para enviar el formulario de contacto */
+.contact-submit-btn {
+  background: linear-gradient(135deg, #fb923c 0%, #f97316 100%);
+  color: white;
+  padding: 16px 32px;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  margin-top: 8px;
+}
+
+.contact-submit-btn:hover {
+  background: linear-gradient(135deg, #f97316 0%, #ea580c 100%);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* Icono de enviar en el botón de contacto */
+.send-icon {
+  font-size: 1.25rem;
+}
+
+/* Contenedor de la imagen en la sección de contacto */
+.contact-image-wrapper {
+  position: relative;
+  overflow: hidden;
+}
+
+/* Imagen de la sección de contacto */
+.contact-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Capa de información sobre la imagen de contacto */
+.contact-info-overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: linear-gradient(to top, rgba(34 34 34 / 80%), rgba(0, 0, 0, 0.4), transparent);
+  padding: 32px 24px 24px;
+}
+
+/* Título de la información de contacto */
+.contact-info h3 {
+  color: white;
+  font-size: 1.25rem;
+  font-weight: bold;
+  margin-bottom: 16px;
+}
+
+/* Línea de detalle de contacto (icono + texto) */
+.contact-detail {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: white;
+  margin-bottom: 8px;
+  font-size: 0.875rem;
+}
+
+/* Icono de detalle de contacto */
+.contact-detail-icon {
+  font-size: 1rem;
+  width: 20px;
+}
+
+/* Botón genérico reutilizable */
+.btn {
+  display: inline-block;
+  margin-top: 0rem;
+  border-radius: 10px;
+  background: #471863;
+  color: #ffffff;
+  padding: 6px 20px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.btn:hover {
+  background-color: #6F4F84;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background: #DFD3C3;
+  padding: 0 2vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+  box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .1);
+  height: 90px;
+}
+
+
+header .main-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 1290px;
+  margin: 0 auto;
+}
+header .logo {
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+header .navbar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex: 1;
+}
+header .navbar a {
+  font-size: 16px;
+  font-weight: 600;
+  color: #511D00;
+  padding: 0 1.1rem;
+  text-align: center;
+  letter-spacing: 0.5px;
+  transition: color 0.2s;
+  text-decoration: none !important;
+}
+
+
+header .icons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+header .logo {
+  height: 85px;
+}
+
+
+header .navbar a:hover {
+  color: #ffffff;
+}
+
+header .icons a {
+  font-size: 28px;
+  color: #471863;
+  margin-left: 1.5rem;
+}
+
+header .icons a:hover {
+  color: #ffffff;
+}
+
+header #toggler {
+  display: none;
+}
+
+header .fa-bars {
+  font-size: 3rem;
+  color: #6F4F84;
+  border-radius: .5rem;
+  padding: .5rem .1.5rem;
+  cursor: pointer;
+  border: .1rem solid rgba(0, 0, 0, .3);
+  display: none;
+}
+
+.home {
+  display: flex;
+  align-items: center;
+  min-height: 100vh;
+  background: url('./img/image26.png') no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.home .content {
+  max-width: 600px;
+  padding: 4rem 2rem 2rem 2rem;
+  border-radius: 18px;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: center;
+}
+
+
+
+.home .content h3 {
+  font-size: 46px;
+  color: #6F4F84;
+  line-height: 1.1;
+  font-weight: 800;
+}
+
+
+.home .content span {
+  font-size: 20px;
+  color: #511D00;
+  padding: 0.5rem 0;
+  line-height: 1.2;
+  font-weight: 700;
+  display: block;
+}
+
+
+.home .content p {
+  font-size: 18px;
+  color: #705445;
+  padding: 0.7rem 0 1.2rem 0;
+  line-height: 1.6;
+  font-weight: 500;
+}
+
+
+
+
+
+/* Aqui van los botones*/
+.filter-container {
+  max-width: 1000px;
+  margin: 40px auto;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+  padding: 32px 40px 24px 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+  line-height: normal;
+}
+
+
+.label-style {
+  color: #471863;
+  padding: 10px 20px;
+  font-size: 22px;
+  text-align: center;
+}
+
+
+
+.content {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  align-items: center;
+}
+
+
+.filter-container select {
+  background: #fff;
+  border: 1.5px solid #e3e3e3;
+  border-radius: 8px;
+  padding: 11px 19px;
+  font-size: 14px;
+  color: #222;
+  box-shadow: 0 1px 6px rgba(0,0,0,0.04);
+  outline: none;
+  transition: border 0.2s;
+}
+
+.filter-container select:focus {
+  border-color: #b5b5b5;
+}
+
+/* Para selects fuera de filtros, mantener estilo actual */
+select:not(.filter-container select) {
+  padding: 10px 20px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+  border-radius: 20px;
+  background-color: #6F4F84;
+  color: white;
+  transition: background-color 0.3s ease;
+}
+
+select:hover {
+  background-color: #8566A1;
+}
+
+
+#button-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+/* Solo el botón de limpiar filtros dentro del contenedor de filtros debe tener color */
+.filter-container #reset-button {
+  background: #888fa0;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  padding: 11px 25px;
+  font-size: 14px;
+  font-weight: 600;
+  box-shadow: 0 1px 6px rgba(0,0,0,0.04);
+  transition: background 0.2s;
+  margin-left: 0.5rem;
+}
+
+.filter-container #reset-button:hover {
+  background: #6d7382;
+}
+
+/* Botones fuera de filtros mantienen estilo general */
+button {
+  padding: 10px 20px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+  border-radius: 20px;
+  background-color: #471863;
+  color: white;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color:   #f3e6ff;
+}
+
+/* Aqui terminan los botones*/
+
+/* aqqui comienza las cards*/
+
+div#root {
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: #F0ECE3;
+}
+
+ul {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  justify-content: center;
+  gap: 10px;
+  max-width: 100vw;
+  padding-top: 30px;
+}
+
+/* Tarjeta individual de animal/adopción */
+.item {
+  background: white;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin: 10px;
+  width: 300px;
+  padding: 16px;
+  box-sizing: border-box;
+  transition: transform 0.2s;
+  display: flex;
+  flex-direction: column;
+  max-width: 300px;
+}
+
+.item:hover {
+  transform: scale(1.05);
+}
+
+/* Imagen dentro del root para cards */
+.root #imageUrl {
+  width: 10%;
+  height: 10px;
+  object-fit: cover;
+  border-radius: 8px 8px 0 0;
+}
+
+dt {
+  margin: -20px 0 0px;
+  font-size: 19px;
+  color: #4F2E1D;
+  padding-top: 20px;
+
+}
+
+dd {
+  margin: 0 0 10px;
+  font-size: 15px;
+  color: #000000;
+
+}
+
+
+/*aqui termina las cards*/
+/* aqqui comienza help our animals*/
+.container-help-our-animals {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+  padding: 2.5rem 2vw;
+  background: #fff9f3;
+  border-radius: 18px;
+  box-shadow: 0 4px 24px rgba(80,60,30,0.07);
+}
+
+.content-help-our-animals {
+  flex: 1 1 320px;
+  min-width: 250px;
+  max-width: 540px;
+  padding: 1.5rem 2rem;
+  font-size: 1.05rem;
+}
+
+/* Lista de misiones específicas de la asociación */
+.animal-mission-list {
+  list-style: none;
+  padding: 0;
+  margin: 1.5rem 0 0 0;
+}
+.animal-mission-list li {
+  margin-bottom: 1rem;
+  font-size: 1em;
+  color: #4F2E1D;
+  display: flex;
+  align-items: center;
+}
+.animal-mission-list li::before {
+  content: '🐾';
+  margin-right: 10px;
+  font-size: 1.2em;
+}
+
+.donation-highlight {
+  font-size: 1.05em;
+  color: #471863;
+  margin-bottom: 1.2rem;
+  font-weight: 600;
+}
+
+/* Caja de donación con formulario o info */
+.donation-box {
+  flex: 1 1 300px;
+  max-width: 350px;
+  background: #fff;
+  border-radius: 16px;
+  box-shadow: 0 2px 12px rgba(80,60,30,0.08);
+  padding: 2rem 1.5rem;
+  margin: auto;
+  text-align: center;
+  font-size: 1.05rem;
+  border: 1px solid #eee;
+}
+
+/* Título de la caja de donación */
+.donation-box h2 {
+  margin-top: 0;
+  font-family: "Montserrat", sans-serif;
+  color: #4F2E1D;
+
+}
+
+.logo img {
+  width: 265px;
+  height: auto;
+  margin-top: 17px;
+}
+
+.amount {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px 0;
+}
+
+.amount input {
+  width: 100px;
+  padding: 5px;
+  font-size: 1.2em;
+  text-align: right;
+  margin-right: 5px;
+}
+
+.amount {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+#donation-amount {
+  width: 100px;
+  padding: 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 20px;
+  text-align: center;
+  color: #7B7B7B;
+  margin-bottom: 10px;
+  background-color: #ECECEC;
+}
+
+.amount span {
+  font-size: 16px;
+}
+
+.currency {
+
+  padding: 15px 33px;
+  background-color: #6F4F84;
+  color: #ffffff;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+
+.checkbox-container {
+  display: flex;
+  align-items: center;
+}
+
+#monthly-donation {
+  margin-right: 10px;
+  margin-left: 79px;
+  width: 20px;
+  height: 20px;
+}
+
+.make {
+  font-size: 21px;
+  color: #4F2E1D;
+}
+
+
+.paypal-logo {
+  font-weight: bold;
+  font-family: 'Helvetica', sans-serif;
+  color: #fff !important;
+}
+
+/* CARD STYLES */
+
+.card-image {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.card-button {
+  display: block;
+  width: 100%;
+  border-radius: 23px;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #022F85;
+  cursor: pointer;
+  font-size: 1em;
+  font-weight: 600;
+}
+
+.card-button {
+  background-color: white;
+  color: #00457C;
+  border: 1px solid #00457C;
+}
+
+.paypal-button:hover {
+  background-color: #f2d883;
+}
+
+/* Efecto hover para el botón de tarjeta */
+.card-button:hover {
+  background-color: #b3ceff;
+}
+
+/* aqqui termina help our animals*/
+.our .row {
+  display: flex;
+  align-items: center;
+  gap: 35px;
+  flex-wrap: wrap;
+  padding: 2rem 0 3rem 0;
+}
+
+
+
+.our .row .video-contain {
+  flex: 1 1 350px;
+  max-width: 625px;
+  position: relative;
+}
+
+.our .row .video-contain video {
+  width: 100%;
+  height: auto;
+  max-height: 350px;
+  object-fit: cover;
+  border: 15px solid #fff;
+  border-radius: 8px;
+  box-shadow: 0 .5rem 1rem rgb(220 220 220);
+}
+
+
+.our .row .content {
+  flex: 1 1 350px;
+  max-width: 600px;
+}
+
+.our .row .content h3 {
+  font-size: 20px;
+  color: #511D00;
+}
+
+.our .row .content p {
+  font-size: 19px;
+  color: #705445;
+  padding: .5rem 0;
+  padding-top: 1rem;
+  line-height: 1.5;
+}
+
+.contact .row {
+  display: flex;
+  flex-wrap: wrap-reverse;
+  gap: 0.5rem;
+  align-items: center;
+  padding: 2rem;
+}
+
+.contact .row form {
+  flex: 2 32 50rem;
+  padding: 3rem 1.5rem;
+  box-shadow: 0 .5rem 1.5rem rgba(0, 0, 0, .1);
+  border: .1rem solid rgba(0, 0, 0, .1);
+  background: #fff;
+  border-radius: 0.5rem;
+}
+
+.contact .row .image {
+  flex: 1 1 40rem;
+}
+
+.contact .row .image img {
+  width: 100%;
+  padding-top: 12px;
+  height: 629px;
+}
+
+.contact .row form .box {
+  padding: 1rem;
+  font-size: 2.5rem;
+  color: #4F2E1D;
+  text-transform: none;
+  border: .1rem solid rgba(0, 0, 0, .1);
+  border-radius: .5rem;
+  margin: 2rem 0;
+  width: 100%;
+}
+
+.contact .row form .box:focus {
+  border-color: #6F4F84;
+}
+
+.contact .row form textarea {
+  height: 15rem;
+  resize: none;
+}
+
+/* Grid de columnas en el top del footer */
+.footer-top .footer-column {
+  display: flex;
+  flex-wrap: nowrap;
+  gap: 1.5rem;
+}
+
+/* Caja individual dentro de columna del footer */
+.footer-top .footer-column .box {
+  flex: auto;
+  border: none;
+}
+
+/* Título de la caja del footer */
+.footer-top .footer-column .box h3 {
+  color: #705445;
+  font-size: 16px;
+  padding: 1rem 0;
+}
+
+/* Enlaces dentro de la caja del footer */
+.footer-top .footer-column .box a {
+  display: block;
+  color: #511D00;
+  font-size: 19px;
+  padding: 3px;
+  text-decoration: none;
+}
+
+/* Hover sobre enlaces del footer */
+.footer-top .footer-column .box a:hover {
+  color: #6F4F84;
+  text-decoration: none !important;
+}
+
+/* Imagen decorativa en la caja del footer */
+.footer-top .footer-column .box img {
+  margin-top: 1rem;
+}
+
+.highlight {
+  text-align: center;
+  padding: 6px;
+  margin-top: 19px;
+  padding-top: 8px;
+  font-size: 19px;
+  color: #4F2E1D;
+  border-top: 0.16px solid rgb(0, 0, 0);
+}
+
+/* Palabra o fragmento destacado dentro de .highlight */
+.highlight span {
+  color: #6F4F84;
+}
+
+
+/* Contenedor de métodos de pago (iconos/logos) */
+.payment-methods {
+  display: flex;
+  gap: 6px;
+}
+
+/* Imagen de método de pago */
+.payment-methods img {
+  height: 60px;
+}
+
+/* Icono dentro de la lista de misiones de animales */
+.animal-mission-list li i {
+  font-size: 2rem;
+  color: #6F4F84;
+}
+
+.donation-highlight {
+  background-color: #6F4F84;
+  color: #fff;
+  padding: 1rem;
+  border-radius: 1rem;
+  text-align: center;
+}
+
+
+/* --- Adoption Stats Section Styles --- */
+.adoption-stats-section {
+  max-width: 1000px;
+  margin: 40px auto;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+  padding: 1.5rem 2rem;
+}
+
+
+
+/* Cabecera de la sección de estadísticas de adopciones */
+.adoption-stats-header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.4rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+  color: #471863;
+  text-align: center;
+  gap: 10px;
+}
+
+
+/* Icono de trofeo en la cabecera de estadísticas */
+.adoption-stats-header .trophy {
+  font-size: 1.5rem;
+  margin-right: 0.5rem;
+}
+
+/* Título de la estadística de adopción */
+.adoption-title {
+  font-size: 22px;
+  font-weight: bold;
+  color: #471863;
+  text-transform: capitalize;
+  letter-spacing: 0.5px;
+  margin-left: 6px;
+}
+
+/* Grid de tarjetas de estadísticas de adopción */
+#adoption-stats .adoption-stats-cards {
+  display: flex;
+  gap: 1.2rem;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+/* Tarjeta individual de estadística de adopción */
+.adoption-stat-card {
+  flex: 1 1 180px;
+  background: linear-gradient(135deg, #f3f6fd 60%, #e3f0ff 100%);
+  border-radius: 10px;
+  padding: 1.2rem 1.5rem;
+  text-align: center;
+  min-width: 170px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+  margin-bottom: 1rem;
+}
+
+/* Tarjeta de estadísticas: disponibles */
+.adoption-stat-card.available { background: #e3f0ff; color: #004aad; }
+/* Tarjeta de estadísticas: edad promedio */
+.adoption-stat-card.avg-age { background: #e6ffe3; color: #159000; }
+/* Tarjeta de estadísticas: razas */
+.adoption-stat-card.breed { background: #f3e6ff; color: #7a00b8; }
+/* Tarjeta de estadísticas: vacunados */
+.adoption-stat-card.vaccinated { background: #ffe8cc; color: #ff6600; }
+
+/* Valor numérico grande en la tarjeta de estadística */
+.stat-value {
+  font-size: 24px;
+  font-weight: bold;
+  color: #333;
+}
+
+/* Etiqueta descriptiva bajo el valor numérico */
+.stat-label {
+  margin-top: 0.5rem;
+  color: #555;
+  font-size: 14px;
+}
+
+/* --- Responsive HTML, HEADER, SECTION, HOME --- */
+/* Ajustes generales para pantallas pequeñas */
+@media (max-width:991px) {
+  html {
+    font-size: 55%;
+  }
+  header {
+    padding: 2rem;
+  }
+  section {
+    padding: 2rem;
+  }
+  .home {
+    background-position: left;
+  }
+}
+
+/* --- Responsive HEADER, NAVBAR, HOME, MAIN-INNER, HELP SECTION --- */
+/* Ajustes para pantallas pequeñas y menús desplegables */
+@media (max-width:768px) {
+  header .fa-bars {
+    display: block;
+  }
+  header .navbar {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background-color: #C7B198;
+    border-top: .1rem solid rgba(0, 0, 0, .1);
+    clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+  }
+  header #toggler:checked~.navbar {
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+  }
+  header .navbar a {
+    margin: 1.5rem;
+    padding: 1.5rem;
+    background: #DFD3C3;
+    border: .1rem solid rgba(0, 0, 0, .1);
+    display: block;
+  }
+  .home .content h3 {
+    font-size: 5rem;
+  }
+  .home .content span {
+    font-size: 2.5rem;
+  }
+  .contenedorStadisticas {
+    display: none;
+  }
+}
+
+/* --- Responsive MAIN INNER --- */
+/* Ajustes para el contenedor principal en pantallas pequeñas */
+@media (max-width: 1050px) {
+  .main-inner {
+    max-width: 98vw;
+    padding: 0 8px;
+  }
+}
+
+/* --- Responsive HELP SECTION --- */
+/* Ajustes para la sección de ayuda en pantallas pequeñas */
+@media (max-width: 1050px) {
+  .help-section {
+    max-width: 98vw;
+    padding: 24px 8px;
+  }
+}
+
+/* --- Responsive HELP SECTION (padding, margin, stats, buttons) --- */
+/* Ajustes adicionales para la sección de ayuda en pantallas pequeñas */
+@media (max-width: 768px) {
+  .help-section {
+      padding: 32px 20px;
+      margin: 32px 0;
+  }
+  
+  .help-header h2 {
+      font-size: 2rem;
+      flex-direction: column;
+      gap: 8px;
+  }
+  
+  .help-stats {
+      grid-template-columns: 1fr;
+  }
+  
+  .donation-buttons {
+      grid-template-columns: 1fr;
+  }
+  
+  .amount-buttons {
+      flex-direction: column;
+      align-items: center;
+  }
+  
+  .amount-btn {
+      width: 120px;
+  }
+}
+
+/* --- Responsive ADOPTION STATS SECTION --- */
+/* Ajustes para la sección de estadísticas de adopción en pantallas pequeñas */
+@media (max-width: 1050px) {
+  .adoption-stats-section {
+    max-width: 98vw;
+    padding: 1.5rem 8px;
+  }
+}
+
+/* --- Responsive OUR SECTION --- */
+/* Ajustes para la sección "Nuestra" en pantallas pequeñas */
+@media (max-width: 900px) {
+  .our .row {
+    flex-direction: column;
+    align-items: stretch;
+  }
+  .our .row .video-contain,
+  .our .row .content {
+    max-width: 100%;
+    flex-basis: auto;
+  }
+  .our .row .video-contain video {
+    max-height: 220px;
+  }
+}
+
+/* --- Responsive HOME CONTENT PARAGRAPH --- */
+/* Ajustes para el párrafo del contenido de la página de inicio en pantallas pequeñas */
+@media (max-width: 700px) {
+  .home .content p {
+    font-size: 14px;
+    padding: 0.5rem 0 0.7rem 0;
+  }
+}
+
+/* --- Responsive HELP SECTION & DONATION SECTION --- */
+@media (max-width: 480px) {
+  .help-section {
+      padding: 24px 16px;
+  }
+  
+  .donation-section {
+      padding: 24px 16px;
+  }
+}
+
+/* --- Responsive HEADER, FILTERS, DOGS GRID, FOOTER --- */
+@media (max-width: 768px) {
+  .header-content {
+      flex-direction: column;
+      gap: 8px;
+      text-align: center;
+  }
+
+  .header-title h1 {
+      font-size: 2rem;
+  }
+
+  .stats-grid {
+      grid-template-columns: repeat(2, 1fr);
+  }
+
+  .filters-grid {
+      grid-template-columns: 1fr;
+  }
+
+  .dogs-grid {
+      grid-template-columns: 1fr;
+  }
+
+  .footer-grid {
+      grid-template-columns: 1fr;
+      text-align: center;
+  }
+}
+
+@media (max-width: 480px) {
+  .container {
+      padding: 0 16px;
+  }
+
+  .stats-grid {
+      grid-template-columns: 1fr;
+  }
+
+  .header-title h1 {
+      font-size: 1.75rem;
+  }
+}
+
+@media (max-width: 900px) {
+  .home .content {
+    max-width: 98vw;
+    padding: 2rem 1rem;
+  }
+}
+@media (max-width: 700px) {
+  header {
+    height: 70px;
+  }
+}
+@media (max-width: 700px) {
+  header .logo {
+    height: 40px;
+  }
+}
+@media (max-width: 700px) {
+  header .navbar a {
+    font-size: 14px;
+    padding: 0 0.5rem;
+  }
+}

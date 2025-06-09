@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-compatible" content="IE-edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pet Finder</title>
+
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+
+<body>
+  <header>
+  <div class="main-inner">
+    <label for="toggler" class="fas fa-bars"></label>
+    <input type="checkbox" name="" id="toggler">
+    <a href="#"><img src="img/Logo (1).png" alt="Logo" class="logo"></a>
+    <nav class="navbar">
+      <a href="#filterSelect">Filter</a>
+      <a href="#animals">About us</a>
+      <a href="#donate">Donate</a>
+      <a href="#contact">Contact us</a>
+    </nav>
+    <h1></h1>
+    <div class="icons">
+      <a href="#" class="fas fa-heart"></a>
+      <a href="#" class="fas fa-user"></a>
+    </div>
+    </div>
+</header>
+
+  <section class="home">
+  <div class="main-inner" id="home">
+    <div class="content">
+      <h3>Adopt your forever best friend</h3>
+      <p>Give a loving home to a pet in need. Experience the joy and unconditional love that only a rescued pet can
+          offer.</p>
+      <a href="#" class="btn">Learn more</a>
+    </div>
+  </div>
+  </section>
+
+  <div class="adoption-stats-section">
+    <div class="adoption-stats-header">
+      <span class="trophy">🏆</span>
+      <span class="adoption-title">Adoption Statistics</span>
+    </div>
+    <div id="adoption-stats"></div>
+  </div>
+  <main>
+    <div class="filter-container" id="filterSelect">
+      <h2 class="handle">
+        <span class="label-style">I Want To See:</span>
+      </h2>
+      <div class="content">
+        <label for="filter-select"></label>
+        <select id="filter-select" name="campo">
+          <option value="">Select Pet</option>
+          <option value="Dog">Dog</option>
+          <option value="Cat">Cat</option>
+        </select>
+
+        <label for="gender-select"></label>
+        <select id="gender-select" name="campo1" data-testid="select-filter">
+          <option value="">All gender</option>
+          <option value="Female">Female</option>
+          <option value="Male">Male</option>
+        </select>
+
+        <label for="size-select"></label>
+        <select id="size-select" name="campo2">
+          <option value="">Pet size</option>
+          <option value="Small">Small</option>
+          <option value="Big">Big</option>
+        </select>
+
+        <label for="ordenar"></label>
+        <select data-testid="select-sort" name="sort" id="ordenar">
+          <option value="">Order A-Z</option>
+          <option value="asc">A-Z</option>
+          <option value="desc">Z-A</option>
+        </select>
+
+        <div id="button-container">
+          <button id="reset-button">Clear</button>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <div id="root" class="picture"></div>
+  
+  <section class="our">
+  <div class="main-inner" id="animals">
+    <div class="row">
+      <div class="video-contain">
+        <video src="img/volunteer.mp4" loop autoplay muted></video>
+      </div>
+      <div class="content">
+        <h3>Why choose them?</h3>
+        <p>Our mission: Pet Finder is an animal welfare organization dedicated to creating a better future for both
+          animals and the community. At our specialized animal rescue and rehoming center, we provide a safe haven for
+          homeless cats and dogs. Here, they receive the care and rehabilitation they need to find their forever homes.
+        </p>
+        <a href="#" class="btn">Learn more</a>
+      </div>
+    </div>
+    </div>
+</section>
+  <section class="help-section" id="donate">
+    <div class="help-content">
+      <div class="help-header">
+        <span class="help-icon">💜</span>
+        <h2>Help Our Animals</h2>
+      </div>
+      <div class="help-description">
+        <p class="help-intro">
+          Your support creates real change: every donation helps save lives and bring hope to animals in need. 💜
+        </p>
+        <p>
+          Your generosity is vital in providing our animals with the necessary food, veterinary care, and support they need to live a happy and healthy life.
+        </p>
+        <p>
+          Through your donation, we are able to offer a safe haven to the most vulnerable dogs and cats, including those who have experienced mistreatment, neglect, abandonment, or are simply unwanted.
+        </p>
+      </div>
+      <div class="help-stats">
+        <div class="help-stat">
+          <span class="help-stat-number">100</span>
+          <span class="help-stat-text">animals cared for daily</span>
+        </div>
+        <div class="help-stat">
+          <span class="help-stat-number">250</span>
+          <span class="help-stat-text">animals re-homed yearly</span>
+        </div>
+        <div class="help-stat">
+          <span class="help-stat-number">160+</span>
+          <span class="help-stat-text">animals rescued per year</span>
+        </div>
+      </div>
+      <div class="help-mission">
+        <ul class="mission-list">
+          <li>🏠 Our Sanctuary provides a refuge for hundreds of vulnerable dogs and cats</li>
+          <li>❤️ We never put a healthy animal down</li>
+          <li>🚪 We never turn away animals in need, as long as we have capacity</li>
+          <li>🏡 We're dedicated to finding forever homes!</li>
+        </ul>
+      </div>
+      <div class="donation-section">
+        <h3>Make a Difference Today</h3>
+        <p>Choose how you'd like to help our animals:</p>
+        <div class="donation-buttons">
+          <div class="donation-option">
+            <h4>One-Time Donation</h4>
+            <p>Make a single donation to help animals in need right now</p>
+            <form action="https://www.paypal.com/donate" method="post" target="_top">
+              <input type="hidden" name="hosted_button_id" value="YOUR_PAYPAL_BUTTON_ID" />
+              <input type="hidden" name="currency_code" value="USD" />
+              <button type="submit" class="paypal-button">
+                <span class="paypal-logo">PayPal</span>Donate Now
+              </button>
+            </form>
+          </div>
+          <div class="donation-option">
+            <h4>Monthly Support</h4>
+            <p>Become a monthly supporter and help us plan for the future</p>
+            <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+              <input type="hidden" name="cmd" value="_s-xclick" />
+              <input type="hidden" name="hosted_button_id" value="YOUR_MONTHLY_BUTTON_ID" />
+              <button type="submit" class="paypal-button monthly">
+                <span class="paypal-logo">PayPal</span>Monthly Support
+              </button>
+            </form>
+          </div>
+        </div>
+        <div class="donation-amounts">
+          <p class="amounts-text">Suggested amounts:</p>
+          <div class="amount-buttons">
+            <button class="amount-btn" onclick="donateAmount(10)">$10</button>
+            <button class="amount-btn" onclick="donateAmount(25)">$25</button>
+            <button class="amount-btn" onclick="donateAmount(50)">$50</button>
+            <button class="amount-btn" onclick="donateAmount(100)">$100</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+              </div>
+        <!-- No Results Message -->
+        <div class="no-results" id="no-results" style="display: none;">
+          <div class="no-results-icon">🐕</div>
+          <h3>No encontramos perritos con esos criterios</h3>
+          <p>Intenta ajustar tus filtros para ver más opciones</p>
+          <button class="show-all-button" onclick="clearFilters()">Ver todos los perritos</button>
+      </div>
+
+      <!-- Contact Form Section -->
+      <section class="contact-section" id="contact">
+          <div class="contact-container">
+              <div class="contact-content">
+                  <div class="contact-form-wrapper">
+                      <h2 class="contact-title">
+                          <span class="contact-icon">📧</span>
+                          Contact Us
+                      </h2>
+                      <p class="contact-description">
+                        Do you have questions about adoption or want to learn more about our pups? 
+                        We’re here to help!
+                      </p>
+                      
+                      <form class="contact-form" id="contact-form">
+                          <div class="form-group">
+                              <label for="name" class="form-label">Your full name</label>
+                              <input 
+                                  type="text" 
+                                  id="name" 
+                                  name="name" 
+                                  class="form-input" 
+                                  placeholder="Your full name"
+                                  required
+                              >
+                          </div>
+                          
+                          <div class="form-group">
+                              <label for="email" class="form-label">Your email address</label>
+                              <input 
+                                  type="email" 
+                                  id="email" 
+                                  name="email" 
+                                  class="form-input" 
+                                  placeholder="your.email@example.com"
+                                  required
+                              >
+                          </div>
+                          
+                          <div class="form-group">
+                              <label for="phone" class="form-label">Your phone number</label>
+                              <input 
+                                  type="tel" 
+                                  id="phone" 
+                                  name="phone" 
+                                  class="form-input" 
+                                  placeholder="(55) 1234-5678"
+                                  required
+                              >
+                          </div>
+                          
+                          <div class="form-group">
+                              <label for="message" class="form-label">Your message</label>
+                              <textarea 
+                                  id="message" 
+                                  name="message" 
+                                  class="form-textarea" 
+                                  placeholder="Tell us about your interest in adopting, questions about a specific dog, or any other inquiry..."
+                                  rows="5"
+                                  required
+                              ></textarea>
+                          </div>
+                          
+                          <button type="submit" class="contact-submit-btn">
+                              <span class="send-icon">📤</span>
+                              Send Message
+                          </button>
+                      </form>
+                  </div>
+                  
+                  <div class="contact-image-wrapper">
+                      <img 
+                          src="https://images.unsplash.com/photo-1601758228041-f3b2795255f1?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80" 
+                          alt="Voluntario cuidando perros en el refugio" 
+                          class="contact-image"
+                      >
+                      <div class="contact-info-overlay">
+                          <div class="contact-info">
+                              <h3>Info a contact</h3>
+                              <div class="contact-detail">
+                                  <span class="contact-detail-icon">📍</span>
+                                  <span>Av. Esperanza 123, ARG</span>
+                              </div>
+                              <div class="contact-detail">
+                                  <span class="contact-detail-icon">📞</span>
+                                  <span>(54) 1234-5678</span>
+                              </div>
+                              <div class="contact-detail">
+                                  <span class="contact-detail-icon">📧</span>
+                                  <span>adoptions@petfinder.org</span>
+                              </div>
+                              <div class="contact-detail">
+                                  <span class="contact-detail-icon">🕒</span>
+                                  <span>Lun-Vie: 10:00-18:00</span>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </section>
+
+      <!-- footer -->
+  <section class="footer-top">
+  <div class="main-inner">
+    <div class="footer-column">
+      <div class="box">
+        <h3>Quick Links</h3>
+        <a href="#">Home</a>
+        <a href="#">Filter</a>
+        <a href="#">Statistics</a>
+        <a href="#animals">About us</a>
+        <a href="#donate">Donate</a>
+        <a href="#contact">Contact us</a>
+      </div>
+
+      <div class="box">
+        <h3>Extra Links</h3>
+        <a href="#">My Account</a>
+        <a href="#">My Favorite</a>
+      </div>
+
+      <div class="box">
+        <h3>Locations</h3>
+        <a href="#">Colombia</a>
+        <a href="#">Argentina</a>
+        <a href="#">Perú</a>
+      </div>
+
+      <div class="box">
+        <h3>Contact Info</h3>
+        <a href="#">+54 444 333 222</a>
+        <a href="#">+31 888 333 222</a>
+        <a href="mailto:PetFinder@gmail.com">PetFinder@gmail.com</a>
+        <a href="#">Colombia, Peru - 400104</a>
+        <div class="payment-methods">
+          <img src="https://ps.w.org/woo-mpgs/assets/icon-256x256.jpg?rev=2087215" alt="Mastercard">
+          <img src="https://cdn.iconscout.com/icon/free/png-256/free-paypal-58-711793.png?f=webp" alt="Paypal">
+          <img src="https://companiesmarketcap.com/img/company-logos/256/V.png" alt="Visa">
+        </div>
+      </div>
+    </div>
+    <footer>
+      <div class="highlight">© 2025 Pet Finder. Created By <span>Bárbara</span> | All Rights Reserved</div>
+    </footer>
+  </div>
+  </section>
+  <script src="main.js" type="module"></script>
+</body>
+
+</html>
